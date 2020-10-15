@@ -19,11 +19,6 @@ jobs:
               with:
                   node-version: 10
 
-            - name: Install Protoc
-              uses: arduino/setup-protoc@v1
-              with:
-                  repo-token: ${{ secrets.GITHUB_TOKEN }}
-
             - name: Cache
               uses: actions/cache@v2
               with:
